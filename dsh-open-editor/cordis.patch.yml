@@ -1,0 +1,14 @@
+# dsh-open-editor — bundle patch layer.
+#
+# When this package is installed with
+#   dsh plugin --profile web add <path-to-dsh-open-editor>
+# the launcher reconciles `dsh.bundle.patch` (declared in package.json) into the
+# profile's layer stack, and this patch inserts the plugin row automatically —
+# no manual `--patch` needed.
+#
+# The row name is the package name. The host half (lib/index.js) registers the
+# /open-editor command; the client half (lib/client.js) is discovered through
+# the package.json `dsh.client` declaration and served as the browser bundle.
+- insert:
+    - id: open-editor
+      name: dsh-open-editor
