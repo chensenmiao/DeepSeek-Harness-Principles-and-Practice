@@ -82,6 +82,5 @@ Web UI 插件、完整实战案例、Agent Preset 编写、高级 Harness 能力
 
 本电子书基于 DeepSeek Harness 仓库的以下原始资料编写：
 
-- `docs/` 目录下 65+ 篇教程和参考文档
 - `.agent-presets/plugin-builder/` — Plugin Builder 预设源码
 - `dsh-open-editor/` — 编辑器按钮插件源码
